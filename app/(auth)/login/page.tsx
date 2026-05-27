@@ -2,10 +2,13 @@ import { Metadata } from 'next'
 import LoginForm from './login-form'
 import { createAdminClient } from '@/lib/supabase/admin'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
     title: 'Login - Método 3A',
     description: 'Acesse o sistema de gestão de tráfego.',
 }
+
 
 export default async function LoginPage() {
     const admin = createAdminClient()
